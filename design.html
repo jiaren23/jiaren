@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平面設計</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+    *{
+        font-family: 微軟正黑體;
+        border-radius: 3px;
+        letter-spacing:2px;
+    }
+
+    /* body{
+        background-color: rgb(46, 45, 45);
+    } */
+
+    .item{
+       
+        margin: 10px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+
+    h1 {
+        margin:20px 0 ;
+        
+        text-align: center;
+    }
+
+    @media screen and (max-width:768px){
+        .tag{
+            display: none;
+        }
+        h3,p{
+            /* color: #fff; */
+            margin: 10px 0;
+        }
+        .item{
+            margin: 50px auto;
+        }
+        
+        .wrap{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+
+    
+
+
+    
+
+    @media screen and (min-width:768px){
+    .wrap{
+        width: 100%;
+        width: 960px;    
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        
+    }
+    .item{
+        width: 300px;
+        height: 450px;
+        margin: 13px;
+        border: solid 1px rgb(155, 146, 146);
+        position: relative;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .item .tag{
+        background-color: red;
+        color: white;
+        padding: 6px 10px;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+    
+    .tag img{
+        max-width: 250px;
+        
+    }
+    h3{
+        margin: 10px 0;
+        font-size: 22px;
+        font-weight: 900;
+        color: rgb(90, 86, 86);
+    }
+
+    }
+   
+
+</style>
+
+</head>
+<body>
+
+    
+<!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+  <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+        <!-- .navbar-brand 左上LOGO位置 -->
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+          <span>WebDesign</span>
+        </a>
+        <!-- .navbar-toggler 漢堡式選單按鈕 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+        <!-- 選單項目&漢堡式折疊選單 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- active表示當前頁面 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exp1.html">專題競賽</a>
+            </li>
+            <!-- .dropdown Navbar選項使用下拉式選單 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
+              <!-- .dropdown-menu 下拉選單內容 -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="asset/work_namecard.html" target="_blank">手刻名片</a>
+                <a class="dropdown-item" href="asset/work_list.html" target="_blank">記帳清單</a>
+                <a class="dropdown-item" href="asset/work_phone.html" target="_blank">iphone</a>
+                <a class="dropdown-item" href="asset/work_vue1.html" target="_blank">Vue雙向綁定</a>
+                <a class="dropdown-item" href="design.html">個仁特設</a>
+              
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+
+
+    <h1>平面設計</h1>
+
+    <div class="wrap">
+            <div class="item">
+                <div class="tag">Design</div>
+                <img src="design/leonnn.jpg">
+                <h3>個人網頁 Banner</h3>
+                <p>大學網頁設計課程時所製作的個人Banner，圖片中自己拿著一台底片相機，背景以具有科技感的圖片襯底，呈現出資訊結合設計的感覺</p>
+            </div>
+            <div class="item">
+                <div class="tag">Design</div>
+                <img src="design/helpself11.jpg">
+                <h3>Help Self APP UI</h3>
+                <p>放視大賞參賽作品圖片設計，UI設計理念: 使User用者在遇及突發狀況時可精準而無誤差的點擊需要使用的功能，因此整體配色彩跳色風格，大膽呈現</p>
+            </div>
+            <div class="item">
+                <div class="tag">Design</div>
+                <img src="design/helpself111.jpg">
+                <h3>Help Self APP UI</h3>
+                <p>放視大賞參賽作品圖片設計，UI設計理念: 使User用者在遇及突發狀況時可精準而無誤差的點擊需要使用的功能，因此整體配色彩跳色風格，大膽呈現</p>
+            </div>
+    </div>
+
+    <div class="wrap">
+        <div class="item">
+            <div class="tag">Design</div>
+            <img src="design/ccs.jpg">
+            <h3>資訊學院院徽</h3>
+            <p>今日是 e 世代的時代，因此我以 IE 與 Edge 瀏覽器 LOGO 為出發點，讓資訊學院、屏東大學等字元 e 字做結合。另外，此 LOGO 更能與屏大校徽做結合，例如將校徽後方的太陽移除，放入此「資訊1世代 LOGO」，便能呈現屏東大學是;資訊多元的國立大學。</p>
+        </div>
+        <div class="item">
+            <div class="tag">Design</div>
+            <img src="design/family.jpg">
+            <h3>夏德萱Logo徵選</h3>
+            <p>以『Family』為主軸做設計。在爺爺夏偉的「夏」字融入了一台相機，同時這個相機也代表英文字母 a，而英文字母F與m象徵著拿著相機的手、英文字母 iLy則是象徵著夏德萱本人的輪廓。這組Logo呼應孫女手裡拿著攝影器材，記錄著家人日常生活的美好時光</p>
+        </div>
+        <div class="item">
+            <div class="tag">Design</div>
+            <img src="design/unb.jpg">
+            <h3>大雅百貨Logo</h3>
+            <p>為店家開設的店面進行Logo設計，採用活潑生動的糖果色調進行調色</p>
+        </div>
+    </div>
+
+    <div class="wrap">
+            <div class="item">
+                    <div class="tag">Design</div>
+                    <img src="design/pieere.jpg">
+                    <h3>Youtuber 劉沛Logo</h3>
+                    <p>參與Youtuber 劉沛的Logo徵選，設計理念: 以劉沛本人的招牌墨鏡及其髮型搭配上讓他影片流量大量成長的寶可夢系列影片之神奇寶貝球來做Logo 的主視覺</p>
+            </div>
+            <div class="item">
+                <div class="tag">Design</div>
+                <img src="design/daphne.gif">
+                <h3>Love66 & 達芙妮 聯名</h3>
+                <p>替Love66設計與達芙妮聯名的GIF動圖，設計理念: 結合達芙妮的商品並以漸進式的跳動呈現達芙妮來到了Love66</p>
+            </div>
+            <div class="item">
+                <div class="tag">Design</div>
+                <img src="design/simcard.gif">
+                <h3>亞太預付卡</h3>
+                <p>替亞太電信設計給外籍勞工的預付卡方案GIF動圖，在動圖中分別表示購買三張月卡，即可獲得後續的優惠方案</p>
+            </div>
+        </div>   
+        
+        
+        
+        <div class="wrap">
+                <div class="item">
+                        <div class="tag">Design</div>
+                        <img src="design/momday.jpg">
+                        <h3>母親節卡片</h3>
+                        <p>第一次在母親節設計紙卡給媽媽，其中將全家人繪製成Q版人偶後再與愛心最結合，設計出一張獨一無二的佳節卡片</p>
+                </div>
+                <div class="item">
+                    <div class="tag">Design</div>
+                    <img src="design/honest.jpg">
+                    <h3>誠實商店Logo 誠實木偶</h3>
+                    <p>參與學校新建的誠實商店所徵選的人形立牌設計，設計理念: 以愛說謊的小木偶為設計出發點，圖中用其長鼻子已經斷裂來勸導同學應該誠實的於無人商店裡完成金錢交易</p>
+                </div>
+                <div class="item">
+                    <div class="tag">Design</div>
+                    <img src="design/good.jpg">
+                    <h3>Line 甲骨文貼圖草稿</h3>
+                    <p>替在寫甲骨文書法的阿姨設計有各種自型的Line貼圖，並以甲骨文為注目重點</p>
+                </div>
+            </div>
+
+            <div class="wrap">
+                    <div class="item">
+                        <div class="tag">Design</div>
+                        <img src="design/discover.jpg">
+                        <h3>國家地理 風格</h3>
+                        <p>與攝友一同前往柴山小自然取景，突發奇想的再自己周圍合成上類似於國家地理頻道的黃色邊框</p>
+                    </div>
+                    <div class="item">
+                        <div class="tag">Design</div>
+                        <img src="design/V.jpg">
+                        <h3>龍虎塔攝影 V怪客</h3>
+                        <p>與攝友一同前往左營龍虎塔，欲搭配現場神秘的氣氛，將V怪客的面具合成於自己的臉上，營造出不一樣的氛圍</p>
+                    </div>
+                    <div class="item">
+                            <div class="tag">Design</div>
+                            <img src="design/yourname.jpg">
+                            <h3>動漫現實合成</h3>
+                            <p>下課後拍下了校園的景色，並合成了動漫你的名字的藍天白雲與神隱少女在畫面中找尋無臉男的情形</p>
+                    </div>
+                    
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+
+          
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+  
+            * {
+            font-family: 微軟正黑體;
+            }
+
+            body {
+              padding-top: 2%;
+            padding-left: 35%;
+            
+            }
+
+            #app {
+            line-height: 30px;
+            }
+
+            .block {
+            width: 40px;
+            height: 40px;
+            border: solid 1px black;
+            }
+
+            .bigblock {
+            width: 80px;
+            height: 80px;
+            }
+
+            .borderbox {
+            padding: 10px;
+            border: solid 1px black;
+            display: inline-block;
+            width: 400px;
+            margin-top: 30px;
+            }
+
+    </style>
+
+</head>
+
+
+<body>
+    
+<div id="app">
+        <label>姓名:</label>
+        <input v-model="name"/><br/>
+        <label>訊息:</label>
+        <input v-model="message"/><br/>
+        <label>顏色:</label>
+        <input v-model="color"/><br/>
+        <label>Class:</label>
+        <input v-model="class"/><br/>
+        <div v-for="(id,book) in books">
+          <label>book {{id+1}}:</label>
+          <input v-model="book"/>
+        </div>
+        <div class="borderbox">
+          <h4>您好，我叫 {{name}}</h4>
+          <h5>這是簡易型的網頁後台，可在此即時的更改文章內容「{{message}}」</h5>
+          <h5>下面這個方塊顏色是: {{color}}</h5>
+          <h5>透過輸入預設的block或bigblock屬性以改變大小</h5>
+          <div class="block {{class}}" style="background-color: {{color}};"></div>
+          <ul>
+            <li v-for="book in books">{{book}}</li>
+          </ul>
+        </div>
+   </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+      <script>
+            var mydata={
+            name: "陳嘉仁",
+            message: "訊訊.......",
+            color: "black",
+            class: "輸入block或bigblock",
+            books: ["哈利波特",
+                "波特萊爾大冒險",
+                "迷霧之子"
+            ]
+            };
+            var vm=new Vue({
+            el: "#app",
+            data: mydata
+            });
+      </script>
+</body>
+</html>

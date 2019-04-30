@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>專題競賽</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/exp1.css">
+</head>
+<body>
+
+
+
+<!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+  <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+      <!-- .navbar-brand 左上LOGO位置 -->
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="images/H-logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        <span>WebDesign</span>
+      </a>
+      <!-- .navbar-toggler 漢堡式選單按鈕 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+      <!-- 選單項目&漢堡式折疊選單 -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- active表示當前頁面 -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exp1.html">專題競賽</a>
+          </li>
+          <!-- .dropdown Navbar選項使用下拉式選單 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="asset/work_namecard.html" target="_blank">手刻名片</a>
+              <a class="dropdown-item" href="asset/work_list.html" target="_blank">記帳清單</a>
+              <a class="dropdown-item" href="asset/work_phone.html" target="_blank">iphone</a>
+              <a class="dropdown-item" href="asset/work_vue1.html" target="_blank">Vue雙向綁定</a>
+              <a class="dropdown-item" href="design.html">個仁特設</a>
+            
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+
+   
+
+      <div class="box">
+            <div class="banner">
+              <button class="left" onclick="plusDivs(-1)">˂</button>
+              <button class="right" onclick="plusDivs(1)">></button>
+              <img class="mySlides" src="images/ui-1.jpg" style="display:none">
+              <img class="mySlides" src="images/ui-2.jpg">
+              <img class="mySlides" src="images/ui-1.jpg" style="display:none">
+            </div>
+            
+          
+            <!-- <div class="rows">
+                <div class="row">
+                  <img class="hover_img" src="asset/images/ui-1.jpg" onclick="currentDiv(1)">
+                </div>
+                <div class="row">
+                  <img class="hover_img" src="asset/images/ui-2.jpg" onclick="currentDiv(2)">
+                </div>
+                <div class="row">
+                  <img class="hover_img" src="asset/images/ui-1.jpg" onclick="currentDiv(3)">
+                </div>
+            </div> -->
+      </div>
+      <br>
+
+      <section class="intr">
+          <div class="intr-text">
+            <h2>研究動機</h2>
+            <p>迷路的人不僅讓家人心裡著急，甚至為了找尋這迷途者， 而需要動用到社會資源，且人口走失案件仍居高不下，結至107年10月份，仍有兩萬多起的失蹤案件 …等。
+                <br>社會事件層出不窮，時時佔據新聞版面，大眾人心惶惶、社會事件頻傳，手邊有個能引起旁人關注、嚇阻歹徒的工具也變得極為重要。
+            </p>
+            <iframe class="yt" src="https://www.youtube.com/embed/mcJriCNY6iM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <!-- <span><a href="https://www.youtube.com/watch?v=mcJriCNY6iM" target="_blank">Youtuber APP展示</a></span> -->
+          </div>
+          <br>
+          
+          <!-- <div class="intr-img"><img src="images/post.jpg" alt=""></div> -->
+          <div class="intr-img">
+              <a href="#img1">
+                  <img src="images/post.jpg" class="thumbnail">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                  <img src="images/post.jpg">
+              </a>
+          </div>
+       </section>
+        
+  
+    <br>
+  
+          
+      <section class="pdfs">
+          <div class="pdf1">
+            <h3>Help Self 緊急求援 APP_企劃書</h3>
+            <embed src= "images/Help Self 緊急求援 APP_企劃書.pdf" >    
+          </div>                
+          <div class="pdf2">
+            <h3>Help Self 緊急求援 APP_使用手冊</h3>
+            <embed src= "images/Help Self 緊急求援 APP_使用手冊.pdf">
+          </div>
+      </section>     
+ 
+
+      <section class="footer">
+      <hr>
+          <p>Copyright © 2019 JiaRen</p>
+        
+      </section>
+  
+      
+
+
+
+
+
+    
+
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+              <script>
+              
+                    function currentDiv(n) {
+                      showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" hover_img", "");
+                      }
+                      x[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " hover_img";
+                    }
+
+                    //------------------------
+
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+              </script>
+                        
+</body>
+</html>
